@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::placeholder {
+    font-size: 0.875rem;
+}
+
+:focus {
+    outline: none;
+}
+
+.metamask-text, .wallet-connect-text {
+    font-family: 'Sora', sans-serif;
+}
+
+.metamask-container, .walletconnect-container {
+    border: 1px solid #CFD8DC;
+    border-radius: 12px;
+}
+
+
+input {
+    background-size: 12.5%;
+}
+
+input:focus {
+    background-size: 0%;
+}
+
+
+@media (min-width: 768px) {
+    ::placeholder {
+    font-size: 1rem;
+}
+}
+
+::selection {
+    background-color: white;
+}
